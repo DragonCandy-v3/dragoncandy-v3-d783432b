@@ -3,7 +3,7 @@ title: DragonCandy Financial Model — Finance Drive Workbook
 type: concept
 created: 2026-09-17
 updated: 2026-09-17
-sources: [2026-09-17-financial-model-reference.md]
+sources: [2026-09-17-financial-model-reference.md, 2026-09-17-financial-model-authority.md]
 tags: [finance, financial-model, spreadsheet, google-drive, budget, forecast, internal]
 ---
 # DragonCandy Financial Model — Finance Drive Workbook
@@ -14,6 +14,19 @@ The workbook is **DragonCandy — Financial Model.xlsm**, in **DragonCandy — C
 11 · Finance** on Google Drive. [Open the Finance folder](https://drive.google.com/drive/folders/1d0yb3VvRPVBF28s1UBHPfrubwkaOsRvM).
 It models 2026–2029. Edit assumptions in the live workbook; this page is a reference and
 audit record, not a live copy of its values. Google Drive controls access to the spreadsheet.
+
+## Financial source of truth
+
+The founder designated this workbook as **one of DragonCandy’s financial sources of
+truth** on 2026-09-17. It is authoritative for the financial planning assumptions and
+forecast calculations maintained in its tabs. Read current figures from the live
+spreadsheet and identify the scenario/date when using them in decisions or reports.
+
+This authority does not turn forecasts into actual results or price the costs still
+marked as missing. When another financial source differs, identify both sources and
+reconcile the assumption, period and metric before publishing a single figure. Do not
+silently choose the repo-generated model or treat this reference’s audit date as proof
+that a later spreadsheet edit was checked.
 
 ## Workbook tabs and dependencies
 

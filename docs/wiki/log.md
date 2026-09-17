@@ -4,8 +4,12 @@
 
 Created [[DragonCandy Financial Model — Finance Drive Workbook]] and
 [[Finance Drive Financial Model Reference Session]], with a live Drive link, seven-tab
-guide and the completed calculation audit’s limits. Updated [[Bottom-Up Financial Model]]
-to distinguish the repo-generated model. The reference uses the internal-library sync.
+guide and the completed calculation audit’s limits. The founder designated the workbook
+as one of DragonCandy’s financial sources of truth; the reference records that authority
+and requires conflicting financial sources to be reconciled. Updated [[Bottom-Up Financial Model]]
+to distinguish the repo-generated model. Restored two existing analysis catalog entries;
+marked the master strategy briefing’s June ARR band as superseded after CI identified it.
+The reference uses the internal-library sync.
 
 ## [2026-08-26] ingest | The pre-seed roster, and giving the workbook a design
 

@@ -439,7 +439,7 @@ Engineering cannot close these. Ordered by what blocks launch.
 
 ### Shipped
 
-- **Finance Drive workbook reference (2026-09-17)** — live XLSM link, tab guide and audit limits for the internal library → `docs/wiki/concepts/finance-drive-financial-model.md`.
+- **Finance Drive workbook reference (2026-09-17)** — a founder-designated financial source of truth, with live XLSM link, tab guide and audit limits for the internal library → `docs/wiki/concepts/finance-drive-financial-model.md`.
 
 > One line each. Prose in `docs/SHIPPED_LOG.md`; synthesis in `docs/wiki/`.
 
