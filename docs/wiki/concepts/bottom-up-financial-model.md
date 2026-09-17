@@ -2,11 +2,15 @@
 title: Bottom-Up Financial Model
 type: concept
 created: 2026-08-26
-updated: 2026-08-26
+updated: 2026-09-17
 sources: [2026-08-26-investor-financial-model-workbook.md, 2026-08-26-preseed-roster-and-workbook-design.md]
 tags: [fundraising, financial-model, census, tam, spreadsheet, provenance, confidentiality]
 ---
 # Bottom-Up Financial Model
+
+For the separate 2026–2029 XLSM in Drive’s Finance folder, see
+[[DragonCandy Financial Model — Finance Drive Workbook]]. This page describes the
+repo-generated Census/metro model; the two models have not been reconciled.
 
 The forecast to 2028 that `docs/PROJECT_CONTEXT.md` §3 now states, and the workbook an investor
 can edit. It lives in `src/pitch/model/` and derives everything from three inputs: **US Census
