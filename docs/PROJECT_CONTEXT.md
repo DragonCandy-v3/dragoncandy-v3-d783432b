@@ -439,6 +439,8 @@ Engineering cannot close these. Ordered by what blocks launch.
 
 ### Shipped
 
+- **Finance Drive workbook reference (2026-09-17)** — live XLSM link, tab guide and audit limits for the internal library → `docs/wiki/concepts/finance-drive-financial-model.md`.
+
 > One line each. Prose in `docs/SHIPPED_LOG.md`; synthesis in `docs/wiki/`.
 
 - **Donny-first dashboard (business + creator)** — the dashboard body is Donny for both roles;

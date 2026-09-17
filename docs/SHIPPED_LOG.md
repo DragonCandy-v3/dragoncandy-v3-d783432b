@@ -32,6 +32,15 @@
 >
 > **Adding an entry:** prepend it (newest first). See `knowledge-sync` step 4.
 
+## [2026-09-17] Finance Drive financial model reference
+
+Added [[DragonCandy Financial Model — Finance Drive Workbook]] as the internal-library
+and repo reference to the existing Finance-folder XLSM. It links directly to Drive,
+maps the seven tabs, records the completed formula audit and preserves explicit limits
+on unpriced costs, account ramps and the historical raise reference. Cross-linked the
+separate [[Bottom-Up Financial Model]] without changing its figures or the investor deck.
+The reference follows the existing internal-scoped knowledge sync.
+
 ## [2026-08-26] The pre-seed funds the four people we are actually hiring, and the workbook gets a design
 
 Branch `feat/preseed-four-hires`, two commits. Codex second review clean, no findings.

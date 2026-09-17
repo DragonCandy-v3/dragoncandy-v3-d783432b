@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-09-17] ingest | Finance Drive financial model reference
+
+Created [[DragonCandy Financial Model — Finance Drive Workbook]] and
+[[Finance Drive Financial Model Reference Session]], with a live Drive link, seven-tab
+guide and the completed calculation audit’s limits. Updated [[Bottom-Up Financial Model]]
+to distinguish the repo-generated model. The reference uses the internal-library sync.
+
 ## [2026-08-26] ingest | The pre-seed roster, and giving the workbook a design
 
 **Created** `raw/sessions/2026-08-26-preseed-roster-and-workbook-design.md`.
