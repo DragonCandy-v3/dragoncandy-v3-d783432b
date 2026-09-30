@@ -9,3 +9,5 @@ tags: [frontend, feed, video, safari]
 # DragonFeed Video Playback Session
 
 The mobile investor-demo walkthrough exposed two player lifecycle defects in [[Dragon Feed]]: a metadata-only Safari preview never cleared its loading overlay, and the dialog's parent effect attempted playback before the portal mounted its videos. The original media was valid. The fix requests a preview frame, starts playback from the mounted video component, preserves manual controls, pauses inactive clips, and reports load failures. Seven regression tests cover the behaviors; no content or backend changes were required.
+
+Final validation: 3,938 tests pass after cataloging two existing wiki analyses and marking the June briefing’s old ARR band as superseded. Build, TypeScript and desktop/mobile browser playback pass. Codex review found no remaining actionable regressions.

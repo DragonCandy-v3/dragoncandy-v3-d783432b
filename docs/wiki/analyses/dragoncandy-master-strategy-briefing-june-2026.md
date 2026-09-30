@@ -22,7 +22,7 @@ tags: []
 
 ## The One-Paragraph Summary
 
-DragonCandy is an AI-powered three-sided marketplace — restaurants, content creators, and brand sponsors — headquartered in Hoboken, NJ. Their hi platform's intelligence layer (Donny AI) automates campaign generation, creator matching, analytics, and scheduling. Its profit engine (DragonDash) delivers premium-margin rush content. The platform is fully built, operating at $416/month, and carrying 39 organic users and $263 in live DragonShare GMV — pre-revenue by deliberate choice, not by incapability. The strategic mission is to win one metro (Hoboken/Hoboken → Manhattan), compound the data flywheel, and reach $7–12M ARR and $2–5M annual profit by Year 3 on a team of 10–11 people. Every strategic decision flows from one North Star: **less typing \= more margin.**
+DragonCandy is an AI-powered three-sided marketplace — restaurants, content creators, and brand sponsors — headquartered in Hoboken, NJ. Their hi platform's intelligence layer (Donny AI) automates campaign generation, creator matching, analytics, and scheduling. Its profit engine (DragonDash) delivers premium-margin rush content. The platform is fully built, operating at $416/month, and carrying 39 organic users and $263 in live DragonShare GMV — pre-revenue by deliberate choice, not by incapability. The strategic mission is to win one metro (Hoboken/Hoboken → Manhattan), compound the data flywheel, and reach $7–12M ARR and $2–5M annual profit by Year 3 on a team of 10–11 people. Every strategic decision flows from one North Star: **less typing \= more margin.** These June 2026 targets are superseded; use `docs/DragonCandy_Investor_Model.md` for the current model.
 
 ---
 
@@ -305,6 +305,7 @@ Supply must exist before demand. Never open a metro to restaurants before creato
 | Metros | 2–3 | 8–12 | 20+ |
 | NRR | — | \>110% | (sustain) |
 | Annual profit | \~breakeven | $500K–2M | $2–5M |
+These June 2026 targets are superseded; use `docs/DragonCandy_Investor_Model.md` for the current model.
 
 ### Unit Economics
 

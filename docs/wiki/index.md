@@ -305,6 +305,7 @@ unblocks Meta, TikTok and X — but **Meta, TikTok and X are unblocked; Google i
 
 ## Analyses
 
+
 - [[18-Month Tech Engineering & Donny AI]](analyses/18-month-tech-engineering-donny-ai-1m-users.md) — Donny-captured analysis: 18-month tech engineering & Donny AI plan toward 1M users
 - [[Claude Skills Framework Audit]](analyses/claude-skills-framework-audit.md) — Anthropic's 9-category Skills playbook applied to DragonCandy's dev `.claude/skills/` library + Donny (playbooks/tools/RAG); a rubric scorecard, coverage matrix, and a value×effort-ranked backlog; the library is strong (gaps are whole missing categories, not weak skills); ships the `careful` safety skill as the #1 quick win
 - [[Claude Subagents Audit]](analyses/claude-subagents-audit.md) — the "how to build Claude Code subagents" video applied to DragonCandy audit-first; 7-dimension rubric + current-usage assessment (zero custom `.claude/agents/`) + a ranked custom-subagent backlog; ships the read-only `edge-function-reviewer` subagent as the #1 quick win. **Tier 2 resolved 2026-07-19** — `rls-migration-reviewer` shipped as `data-exposure-reviewer` ([[Service-Role Data Exposure]]); its `~` partial non-redundancy cleared by drawing the boundary the deferral asked for (`verify-db-schema` = does RLS *permit* the real caller; the subagent = does it *exclude* everyone else), and renamed because the evidence sits in service-role query call sites, not migrations.
@@ -317,9 +318,11 @@ unblocks Meta, TikTok and X — but **Meta, TikTok and X are unblocked; Google i
 - [[DragonCandy Tech & Infrastructure Cost Breakdown]](analyses/here-s-the-exported-doc-dragoncandy-tech-infrastructure-cost-breakdown-nyc-media.md) — Donny-captured analysis: NYC-median tech & infrastructure cost breakdown for the capital raise
 - [[Human Marketing Team (Part 1)]](analyses/part-1-the-human-marketing-team.md) — Donny-captured analysis: the human marketing team (part 1)
 - [[Influencer/Creator Outreach]](analyses/influencer-creator-outreach-w-donny.md) — Donny-captured (2026-06-23): can Donny reach out to off-platform creators / build campaigns with them — what's reachable vs the hard platform walls to design around
+- [[Master Strategy Briefing (June 2026)]](analyses/dragoncandy-master-strategy-briefing-june-2026.md) — historical strategy briefing; ARR targets superseded by the current investor model
 - [[North Star & KPI Scorecard]](analyses/north-star-kpi-scorecard.md) — Three-year targets + kill-switches operationalized and validated against 2025 SMB-SaaS benchmarks; flags churn-unit ambiguity and a mis-scoped rev/employee gate
 - [[PART 1 — Engineering & AIOS Operations]](analyses/part-1-engineering-aios-operations.md) — Donny-captured analysis: engineering & AIOS operations (part 1)
 - [[Platform API Registration Plan]](analyses/platform-api-registration-plan.md) — running checklist to swap Outstand for direct Meta/X/TikTok/YouTube + Toast access; per-platform requirements, lead times, Meta deep-dive; unblocks the dark Content Engine signal
 - [[Tech & Infrastructure Cost Breakdown (Updated)]](analyses/tech-infrastructure-cost-breakdown-updated.md) — Donny-captured analysis: updated tech & infrastructure cost breakdown for the capital raise
 - [[The Core Idea: Two Agents, One Company]](analyses/the-core-idea-two-agents-one-company.md) — Donny-captured (2026-06-27): Donny serves users, Dezzy (renamed from "Dame") serves the company; Dezzy's six growth domains + the economy-of-scale loop; domain #3 (Outreach Machine) shipped as v1 — see [[Dezzy Agent (Playbook Suite)]]
 - [[What We Built]](analyses/what-we-built.md) — Donny-captured (2026-06-27): a configurable, projected-activity-based rewards/boost mechanic to drive engagement and grow the app automatically (Dragon Rewards Engine context)
+- [[🐉 Ten DragonCandy Slogans]](analyses/ten-dragoncandy-slogans.md) — internal Donny brand slogan suggestions (2026-08-11)
