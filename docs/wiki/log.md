@@ -1,5 +1,8 @@
 # Wiki Log
 
+## [2026-09-30] ingest | DragonFeed video playback repair
+Created [[DragonFeed Video Playback Session]]; updated [[Dragon Feed]] with metadata-only preview and delayed-portal playback findings. Source: `raw/sessions/2026-09-30-dragonfeed-video-playback.md`.
+
 ## [2026-08-26] ingest | The pre-seed roster, and giving the workbook a design
 
 **Created** `raw/sessions/2026-08-26-preseed-roster-and-workbook-design.md`.

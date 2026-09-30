@@ -32,6 +32,11 @@
 >
 > **Adding an entry:** prepend it (newest first). See `knowledge-sync` step 4.
 
+## 2026-09-30 — DragonFeed video previews and playback
+
+Ricky Ricardo's valid MOV exposed a Safari preview spinner and a viewer that never started its video. Previews now request a frame after metadata. The video component owns playback after portal mounting, pauses inactive clips, offers native controls, and reports loading errors. Seven regression tests cover these behaviors. No uploaded content, schema, or authorization was changed. See `docs/wiki/concepts/dragon-feed.md`.
+
+
 ## [2026-08-26] The pre-seed funds the four people we are actually hiring, and the workbook gets a design
 
 Branch `feat/preseed-four-hires`, two commits. Codex second review clean, no findings.

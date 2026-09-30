@@ -441,6 +441,8 @@ Engineering cannot close these. Ordered by what blocks launch.
 
 > One line each. Prose in `docs/SHIPPED_LOG.md`; synthesis in `docs/wiki/`.
 
+- **DragonFeed video playback** — Safari preview-frame loading and portal-owned playback with manual controls; see `docs/wiki/concepts/dragon-feed.md`.
+
 - **Donny-first dashboard (business + creator)** — the dashboard body is Donny for both roles;
   #444 (creator, Phase 3) is **merged**. `billing_agent` is wrong for creators and is routed
   around, not fixed. → `docs/wiki/concepts/donny-first-dashboard.md` · #410, #411, #423, #428, #429, #444
