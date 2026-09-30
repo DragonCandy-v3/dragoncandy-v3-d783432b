@@ -41,7 +41,16 @@ export const FeedTile: React.FC<FeedTileProps> = ({ media, onOpen, isNew = false
           onLoadedData={() => setLoaded(true)}
           // The browser already decodes duration under preload="metadata" — no server-side probe
           // and no new column needed to label how long a clip runs.
-          onLoadedMetadata={(e) => setDuration(e.currentTarget.duration)}
+          onLoadedMetadata={(e) => {
+              const video = e.currentTarget;
+              setDuration(video.duration);
+              // iOS may stop at metadata without decoding a poster frame. Seek slightly
+              // into the clip to request one; don't leave a spinner covering the video.
+              if (Number.isFinite(video.duration) && video.duration > 0) {
+                video.currentTime = Math.min(0.01, video.duration / 2);
+              }
+              setLoaded(true);
+            }}
           onError={() => setError(true)}
           muted
           playsInline

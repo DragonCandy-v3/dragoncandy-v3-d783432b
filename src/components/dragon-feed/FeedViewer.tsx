@@ -1,4 +1,5 @@
-import React, { useCallback, useEffect, useRef } from 'react';
+import React, { useCallback, useEffect } from 'react';
+import { FeedViewerVideo } from './FeedViewerVideo';
 import { useNavigate } from 'react-router-dom';
 import * as DialogPrimitive from '@radix-ui/react-dialog';
 import useEmblaCarousel from 'embla-carousel-react';
@@ -23,7 +24,6 @@ export const FeedViewer: React.FC<FeedViewerProps> = ({ items, index, onIndexCha
   const { liked, toggleLike } = useFeedLike(activeItem);
   const { messageCreator } = useMessageCreator();
   const recordView = useRecordFeedView();
-  const videoRefs = useRef(new Map<number, HTMLVideoElement>());
 
   // A "view" is an item reaching the lightbox — including each one swiped to. Deduped per
   // user/item/day inside the hook, and fire-and-forget so analytics never blocks browsing.
@@ -53,20 +53,11 @@ export const FeedViewer: React.FC<FeedViewerProps> = ({ items, index, onIndexCha
     }
   }, [emblaApi, index]);
 
-  // Play the active slide's video, pause the rest.
-  useEffect(() => {
-    videoRefs.current.forEach((video, i) => {
-      if (i === index) {
-        video.play().catch(() => {});
-      } else {
-        video.pause();
-      }
-    });
-  }, [index]);
-
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
+      // Native player arrow keys seek within the clip, not between feed items.
+      if (e.target instanceof HTMLVideoElement) return;
       if (e.key === 'ArrowLeft' && index > 0) onIndexChange(index - 1);
       if (e.key === 'ArrowRight' && index < items.length - 1) onIndexChange(index + 1);
     };
@@ -102,19 +93,7 @@ export const FeedViewer: React.FC<FeedViewerProps> = ({ items, index, onIndexCha
                   <div key={item.id} className="relative h-full min-w-0 flex-[0_0_100%]">
                     {isNear && (
                       item.type === 'video' ? (
-                        <video
-                          ref={(el) => {
-                            if (el) videoRefs.current.set(i, el);
-                            else videoRefs.current.delete(i);
-                          }}
-                          src={item.url}
-                          aria-label={`Video by ${item.creatorName}`}
-                          className="h-full w-full object-contain"
-                          muted
-                          loop
-                          playsInline
-                          preload="metadata"
-                        />
+                        <FeedViewerVideo media={item} active={i === index} />
                       ) : (
                         <img
                           src={item.url}

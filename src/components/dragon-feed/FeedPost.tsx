@@ -67,7 +67,16 @@ export const FeedPost: React.FC<FeedPostProps> = ({ media, onOpen, isNew = false
             aria-label={`Video by ${media.creatorName}`}
             className="h-full w-full object-cover"
             onLoadedData={() => setLoaded(true)}
-            onLoadedMetadata={(e) => setDuration(e.currentTarget.duration)}
+            onLoadedMetadata={(e) => {
+              const video = e.currentTarget;
+              setDuration(video.duration);
+              // iOS may stop at metadata without decoding a poster frame. Seek slightly
+              // into the clip to request one; don't leave a spinner covering the video.
+              if (Number.isFinite(video.duration) && video.duration > 0) {
+                video.currentTime = Math.min(0.01, video.duration / 2);
+              }
+              setLoaded(true);
+            }}
             onError={() => setError(true)}
             muted
             playsInline

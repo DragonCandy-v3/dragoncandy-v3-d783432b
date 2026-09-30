@@ -2,8 +2,8 @@
 title: Dragon Feed
 type: concept
 created: 2026-07-16
-updated: 2026-08-07
-sources: [2026-07-16-dragonfeed-mobile-feed-zip-search.md, 2026-07-16-dragonfeed-creator-search.md, 2026-08-07-dragonfeed-uplift-and-nav-active.md]
+updated: 2026-09-30
+sources: [2026-09-30-dragonfeed-video-playback.md, 2026-07-16-dragonfeed-mobile-feed-zip-search.md, 2026-07-16-dragonfeed-creator-search.md, 2026-08-07-dragonfeed-uplift-and-nav-active.md]
 tags: [frontend, feed, mobile, location, geocoding, discovery, search, ordering, consent]
 ---
 # Dragon Feed
@@ -14,6 +14,20 @@ portfolio media, used by BOTH the business feed page (`BusinessDragonFeed`) and 
 `DragonFeedGrid`; its data comes from `useUniqueCreatorPortfolio` (creator_profiles with
 `allow_portfolio_in_feed = true`, flattened to one media item per portfolio URL). Tapping any
 item opens the `FeedViewer` lightbox (swipe pager + like + message-creator).
+
+## Video previews and portal playback (2026-09-30)
+
+`preload="metadata"` does not guarantee `loadeddata` on iPhone Safari. FeedPost and
+FeedTile request a frame with a short seek after metadata and clear the loading overlay.
+The duration badge still comes from browser metadata; no new media or schema is needed.
+
+The viewer's video owns its playback effect in `FeedViewerVideo`. A parent effect may run
+before Radix mounts the portal children, leaving the ref map empty and the video paused
+forever. Start playback after the video itself mounts; pause on inactivity and cleanup.
+Native controls allow a direct user gesture when autoplay is blocked. Keep those controls
+clear of the creator action bar, and surface media errors instead of a blank player.
+
+See [[DragonFeed Video Playback Session]].
 
 ## Mobile vertical feed vs. desktop grid
 
